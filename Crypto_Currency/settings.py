@@ -15,7 +15,6 @@ from pathlib import Path
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
@@ -26,7 +25,6 @@ SECRET_KEY = 'django-insecure-@bn@#7ilzp^uaplj!&7+yky*glq7ntjh6=$3nh^4drb+09go10
 DEBUG = True
 
 ALLOWED_HOSTS = []
-
 
 # Application definition
 
@@ -72,7 +70,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'Crypto_Currency.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/4.0/ref/settings/#databases
 
@@ -82,7 +79,6 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/4.0/ref/settings/#auth-password-validators
@@ -102,7 +98,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
 # Internationalization
 # https://docs.djangoproject.com/en/4.0/topics/i18n/
 
@@ -113,7 +108,6 @@ TIME_ZONE = 'UTC'
 USE_I18N = True
 
 USE_TZ = True
-
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
@@ -137,9 +131,3 @@ EMAIL_USE_TLS = True
 
 EMAIL_HOST_USER = "kushdarji11@gmail.com"
 EMAIL_HOST_PASSWORD = "Mani1606$"
-
-STRIPE_PUBLIC_KEY = 'pk_test_51KishYDTRWA1o9cFDW67ezcqYnJmpsV29O73F8OgcaYLx3Qj3uUEIZ9aeidY8jloCAGubhivuClMBwhMvfmACMza00lnOM5TAI'
-
-STRIPE_SECRET_KEY = 'sk_test_51KishYDTRWA1o9cFtmcdSn77t8XPR6zJtstMh8fgWkAXywDOBdhOnkVYNPwcE6jSBkrXTIo0KHPmuoQqL78vlmA400eGVLHgFf'
-STRIPE_WEBHOOK_SECRET = ""
-

@@ -112,7 +112,7 @@ def coinDetail(request, id, current_price, market_cap):
         cleanExpression = re.compile('<.*?>')
         cleantext = re.sub(cleanExpression, '', desc)
         context['market_cap_val'] = market_cap_val
-        context['labels'] = ['Day 1', 'Day 2', 'Day 3', 'Day 4', 'Day 5', 'Day 6', 'Day 7', 'Day 8', 'Day 9', 'Day 10',
+        context['labels'] = ['Day 1', 'Day 2', 'Day 3', 'Day 4', 'Day 5', 'qDay 6', 'Day 7', 'Day 8', 'Day 9', 'Day 10',
                              'Day 11', 'Day 12']
         context['desc'] = cleantext
         context['img_val'] = img_val
